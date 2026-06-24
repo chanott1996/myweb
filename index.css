@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { margin: 0; background: #F6F8FA; font-family: Inter, system-ui, sans-serif; }
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.mic-scroll::-webkit-scrollbar { height: 8px; width: 8px; }
+.mic-scroll::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 8px; }
