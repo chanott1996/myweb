@@ -240,7 +240,7 @@ function EmptyState({onUpload,onTemplate,onHelp}){
     <div className="flex items-center justify-center gap-2">
       <button onClick={onUpload} className="rounded-md px-4 py-2 text-sm font-medium text-white" style={{background:C.teal}}>เลือกไฟล์</button>
       <button onClick={onTemplate} className="rounded-md border px-4 py-2 text-sm font-medium" style={{borderColor:C.line2,color:C.sub}}>ดาวน์โหลดเทมเพลตตัวอย่าง</button>
-      {onHelp&&<button onClick={onHelp} className="rounded-md border px-4 py-2 text-sm font-medium" style={{borderColor:C.line2,color:C.teal}}>อ่านคู่มือ & อภิธานศัพท์</button>}
+      {onHelp&&<button onClick={onHelp} className="rounded-md border px-4 py-2 text-sm font-medium" style={{borderColor:C.line2,color:C.teal}}>อ่านคู่มือ & นิยามศัพท์เฉพาะ</button>}
     </div>
   </div>;
 }
@@ -646,7 +646,7 @@ function HelpPage({onBack}){
   return (
     <div className="space-y-5">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold" style={display}>คู่มือการใช้งาน & อภิธานศัพท์</h2>
+        <h2 className="text-xl font-bold" style={display}>คู่มือการใช้งาน & นิยามศัพท์เฉพาะ</h2>
         <button onClick={onBack} className="rounded-md border px-3 py-1.5 text-sm" style={{borderColor:C.line2,color:C.teal}}>← กลับ</button>
       </div>
 
@@ -664,7 +664,7 @@ function HelpPage({onBack}){
       </div>
 
       <div>
-        <h3 className="text-sm font-semibold uppercase mb-3" style={{color:C.sub,letterSpacing:"0.06em"}}>อภิธานศัพท์ทางวิชาการ</h3>
+        <h3 className="text-sm font-semibold uppercase mb-3" style={{color:C.sub,letterSpacing:"0.06em"}}>นิยามศัพท์เฉพาะ</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <Term th="MIC" en="Minimum Inhibitory Concentration">ความเข้มข้นต่ำสุดของยาต้านจุลชีพที่ยับยั้งการเจริญที่มองเห็นได้ของเชื้อ วัดเป็น mg/L (หรือ µg/mL) โดยทั่วไปทดสอบเป็นชุดเจือจางสองเท่า (doubling/two-fold dilution) เช่น 0.25, 0.5, 1, 2, 4 …</Term>
           <Term th="การกระจาย MIC" en="MIC distribution">จำนวนเชื้อในแต่ละค่าความเข้มข้น เมื่อพล็อตจะเห็นเป็นฮิสโตแกรม ประชากรที่ไม่มีกลไกดื้อยา (wild-type) มักรวมกันเป็นพีคเดียวรูประฆังบนสเกล log2 ส่วนเชื้อที่มีกลไกดื้อจะแยกออกไปทางค่าสูง</Term>
